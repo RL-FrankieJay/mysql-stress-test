@@ -1,2 +1,2 @@
-sysbench --test=oltp --oltp-table-size=1000000 --mysql-db=test --mysql-user=root --mysql-password=secret prepare
-sysbench --test=oltp --oltp-table-size=1000000 --mysql-db=test --mysql-user=root --mysql-password=secret --max-time=500 --oltp-read-only=off --max-requests=0 --num-threads=400 run
+sysbench --test=oltp --oltp-table-size=1000 --mysql-db=test --mysql-user=root --mysql-password=secret prepare
+for each in 1 2 4 8 16 32 64 128 256 512; do sysbench --test=oltp --oltp-table-size=1000 --mysql-db=test --mysql-user=root --mysql-password=secret --cpu-max-prime=20000 --max-time=500 --max-requests=0 --oltp-read-only --oltp-skip-trx  --oltp-nontrx-mode=select --num-threads=$each run; sleep 20; done

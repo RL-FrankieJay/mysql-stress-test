@@ -1,11 +1,11 @@
 version: '2'
 services:
-  database1: 
+  database1:
     build: .
     image: mysql-stress
     volumes:
      - ./data/1/:/var/lib/mysql
-  database2: 
+  database2:
     build: .
     image: mysql-stress
     volumes:
@@ -20,3 +20,63 @@ services:
     image: mysql-stress
     volumes:
      - ./data/4/:/var/lib/mysql
+  database5:
+    build: .
+    image: mysql-stress
+    volumes:
+     - ./data/5/:/var/lib/mysql
+  database6:
+    build: .
+    image: mysql-stress
+    volumes:
+     - ./data/6/:/var/lib/mysql
+  database7:
+    build: .
+    image: mysql-stress
+    volumes:
+     - ./data/7/:/var/lib/mysql
+  database8:
+    build: .
+    image: mysql-stress
+    volumes:
+     - ./data/8/:/var/lib/mysql
+  database9:
+    build: .
+    image: mysql-stress
+    volumes:
+     - ./data/9/:/var/lib/mysql
+  database10:
+    build: .
+    image: mysql-stress
+    volumes:
+     - ./data/10/:/var/lib/mysql
+  database11:
+    build: .
+    image: mysql-stress
+    volumes:
+     - ./data/11/:/var/lib/mysql
+  database12:
+    build: .
+    image: mysql-stress
+    volumes:
+     - ./data/12/:/var/lib/mysql
+  database13:
+    build: .
+    image: mysql-stress
+    volumes:
+     - ./data/13/:/var/lib/mysql
+  database14:
+    build: .
+    image: mysql-stress
+    volumes:
+     - ./data/14/:/var/lib/mysql
+  database15:
+    build: .
+    image: mysql-stress
+    volumes:
+     - ./data/15/:/var/lib/mysql
+  database16:
+    build: .
+    image: mysql-stress
+    volumes:
+     - ./data/16/:/var/lib/mysql
